@@ -1,12 +1,12 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
 	"os/exec"
-	"strings"
 
 	"github.com/fatih/color"
 )
@@ -31,8 +31,7 @@ func main() {
 				continue
 			}
 
-			s := string(out[:])
-			if strings.Contains(s, "nothing to commit, working directory clean") != true {
+			if bytes.Contains(out, []byte("nothing to commit, working directory clean")) != true {
 				color.Blue("%s", file.Name())
 				fmt.Printf("%s\n", out)
 			}
