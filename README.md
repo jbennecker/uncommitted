@@ -9,3 +9,9 @@ lists git repositories not in sync with remote
 ### example output
 
 ![](screenshot.png)
+
+### install
+
+You can download the [prebuilt binary](main) or install with go
+
+    $ go get github.com/jbennecker/uncommitted
