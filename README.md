@@ -12,6 +12,6 @@ lists git repositories not in sync with remote
 
 ### install
 
-You can download the [prebuilt binary](uncommitted) or install with go
+You can download the [prebuilt binary](https://github.com/jbennecker/uncommitted/raw/master/uncommited) or install with go
 
     $ go get github.com/jbennecker/uncommitted
