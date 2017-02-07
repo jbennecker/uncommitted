@@ -31,7 +31,7 @@ func main() {
 				continue
 			}
 
-			if bytes.Contains(out, []byte("nothing to commit, working directory clean")) != true {
+			if bytes.Contains(out, []byte("nothing to commit, working tree clean")) != true {
 				color.Blue("%s", file.Name())
 				fmt.Printf("%s\n", out)
 			}
